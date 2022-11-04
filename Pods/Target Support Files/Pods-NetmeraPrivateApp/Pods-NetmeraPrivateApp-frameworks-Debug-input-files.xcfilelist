@@ -1,0 +1,22 @@
+${PODS_ROOT}/Target Support Files/Pods-NetmeraPrivateApp/Pods-NetmeraPrivateApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework
+${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework
+${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework
+${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework
+${BUILT_PRODUCTS_DIR}/FirebaseDatabase/FirebaseDatabase.framework
+${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework
+${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework
+${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework
+${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
+${BUILT_PRODUCTS_DIR}/MMWormhole/MMWormhole.framework
+${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
+${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework
+${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework
+${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Netmera/AdIdSupport/NetmeraAdId.framework/NetmeraAdId
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Netmera/NetmeraWithoutAdId/Netmera.framework/Netmera
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NetmeraCore/NetmeraCore.framework/NetmeraCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Netmera/NotificationServiceExtension/NetmeraNotificationServiceExtension.framework/NetmeraNotificationServiceExtension
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Netmera/NotificationContentExtension/NetmeraNotificationContentExtension.framework/NetmeraNotificationContentExtension
