@@ -1,6 +1,0 @@
-framework module Pods_NetmeraPrivateApp {
-  umbrella header "Pods-NetmeraPrivateApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
