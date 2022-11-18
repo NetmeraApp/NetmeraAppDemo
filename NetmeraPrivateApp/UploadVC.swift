@@ -43,6 +43,9 @@ class UploadVC: UIViewController {
                 }
     }
     
+    @IBAction func btnTesvik(_ sender: Any) {
+        
+    }
     
     /*
     // MARK: - Navigation

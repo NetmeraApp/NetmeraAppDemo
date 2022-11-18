@@ -15,6 +15,8 @@ target 'NetmeraPrivateApp' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 
 end
 

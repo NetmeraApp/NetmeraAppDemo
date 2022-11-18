@@ -9,6 +9,9 @@ import UIKit
 import Netmera
 import Firebase
 import FirebaseAnalytics
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,8 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 // Netmera.setBaseURL("YOUR PANEL DOMAIN URL")
 
                 // This can be called later, see documentation for details
-     
-               Netmera.setAPIKey("gFtyH_nz5WCS8icSI9sRpJ3VpY-FgFQWPTdnK_-z9P5jk5BqlzC4xA")
+        Netmera.setBaseURL("https://test.sdpaas.com/")
+               Netmera.setAPIKey("gFtyH_nz5WC9m8cZcUfrB2qIGSj205HbPSzBquEEYiO0vO11EhiZfA")
       
     
                 Netmera.setLogLevel(NetmeraLogLevel.debug)
@@ -43,11 +46,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Netmera.setAppGroupName("group.com.Netmera.NetmeraPrivateApp")
         Netmera.requestTrackingAuthorization()
         Netmera.requestLocationAuthorization()
-//        let user = NetmeraUser()
-//        user.userId = "elif"
-//        Netmera.update(user)
+        let user = MyNetmeraUser()
+        user.userId = "elif"
         
+        Netmera.update(user)
         
+     
        
         return true
     }
@@ -67,18 +71,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void)
     {
-    //NetmeraPushObject(dictionary: response.notification.request.content.userInfo)
-    //object.alert.body                  //Push Text
-    //object.alert.title                 //Push Title
-    //object.action.deeplinkURL          //Push Deeplink
-    //object.customDictionary            //Custom JSON
+        
+        NetmeraPushObject(dictionary: response.notification.request.content.userInfo)
+        print("???????????????????")
+        print(response)
+        
+         
+      
+       
+        //object.alert.body                  //Push Text
+        //object.alert.title                 //Push Title
+        //object.action.deeplinkURL          //Push Deeplink
+               //Custom JSON
+
+//        let userInfo =  response.notification.request.content.userInfo
+//        print("----------------------------!!!!!!------------------------------")
+//        if let data = userInfo["subgame"] as? [String: Any],
+//                    let payload = data["subgame"] as? [String: Any],
+//                    let postId = payload["subgame"] as? String{
+//                    print("subgame \(postId)")
+//                }else{
+//                    print("there is no post id inside the payload")
+//                }
+
     }
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void)
     {
     //Netmera.recentPushObject()?.alert.body                  //Push Text
     //Netmera.recentPushObject()?.alert.title                 //Push Title
     //Netmera.recentPushObject()?.action.deeplinkURL          //Push Deeplink
-    //Netmera.recentPushObject()?.customDictionary            //Custom JSON
+        print("??????????????????--------------???????????????")
+    print(Netmera.recentPushObject()?.customDictionary)        //Custom JSON
     }
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
             completionHandler(.alert)

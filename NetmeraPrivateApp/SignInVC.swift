@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import AdSupport
 import AppTrackingTransparency
+import Netmera
 
 import WidgetKit
 import ActivityKit
@@ -87,6 +88,20 @@ class SignInVC: UIViewController {
         }catch{
             print(error.localizedDescription)
         }
+    }
+    @IBAction func btnUserUpdate(_ sender: Any) {
+        let user = MyNetmeraUser()
+        user.country = "tr"
+        user.language = "tr"
+        user.testAttribute = 1
+        user.sporx1 = 2
+        user.sporxString = "spor"
+        Netmera.update(user)
+    }
+    
+    
+    @IBAction func btnRequestPN(_ sender: Any) {
+        Netmera.requestPushNotificationAuthorization(forTypes: [.alert, .badge, .sound])
     }
     /*
     // MARK: - Navigation
