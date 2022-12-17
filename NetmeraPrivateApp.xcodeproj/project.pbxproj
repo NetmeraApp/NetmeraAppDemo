@@ -15,9 +15,10 @@
 		1A0A1AF929138FCE00B9A12E /* ScoreStatusExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A0A1AEC29138FCB00B9A12E /* ScoreStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1A0A1AFF2913901200B9A12E /* ScoreAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0A1AFE2913901200B9A12E /* ScoreAttributes.swift */; };
 		1A0A1B002913901200B9A12E /* ScoreAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0A1AFE2913901200B9A12E /* ScoreAttributes.swift */; };
+		1A57A4F62944F66E002A0C5E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4F52944F66E002A0C5E /* FeedVC.swift */; };
+		1AA432A12930A48600815AF7 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA432A02930A48600815AF7 /* ItemModel.swift */; };
 		1AA837CC288F317700B12BA6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA837CB288F317700B12BA6 /* DataService.swift */; };
 		1AA837CE288F372000B12BA6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA837CD288F372000B12BA6 /* Common.swift */; };
-		1AA837D0288F378000B12BA6 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA837CF288F378000B12BA6 /* FeedVC.swift */; };
 		1AA837D2288F37B700B12BA6 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA837D1288F37B700B12BA6 /* UploadVC.swift */; };
 		1AA837D4288F37C900B12BA6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA837D3288F37C900B12BA6 /* SignInVC.swift */; };
 		1AA837D6288F37E300B12BA6 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA837D5288F37E300B12BA6 /* SignUpVC.swift */; };
@@ -93,10 +94,11 @@
 		1A0A1AF429138FCE00B9A12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A0A1AF629138FCE00B9A12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0A1AFE2913901200B9A12E /* ScoreAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAttributes.swift; sourceTree = "<group>"; };
+		1A57A4F52944F66E002A0C5E /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		1A94ED65B930AA271B355441 /* Pods-MyNetmeraServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNetmeraServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-MyNetmeraServiceExtension/Pods-MyNetmeraServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		1AA432A02930A48600815AF7 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		1AA837CB288F317700B12BA6 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1AA837CD288F372000B12BA6 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		1AA837CF288F378000B12BA6 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		1AA837D1288F37B700B12BA6 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		1AA837D3288F37C900B12BA6 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		1AA837D5288F37E300B12BA6 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -187,8 +189,41 @@
 			isa = PBXGroup;
 			children = (
 				1A0A1AFE2913901200B9A12E /* ScoreAttributes.swift */,
+				1AA432A02930A48600815AF7 /* ItemModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1A57A4F22944F085002A0C5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AB2092B28858C59005427DD /* ViewController.swift */,
+				1A0144D829194549001E4497 /* ProfileVC.swift */,
+				1AA837D3288F37C900B12BA6 /* SignInVC.swift */,
+				1AA837D5288F37E300B12BA6 /* SignUpVC.swift */,
+				1AA837D7288F383500B12BA6 /* FeedTableViewCell.swift */,
+				1AA837D1288F37B700B12BA6 /* UploadVC.swift */,
+				1A57A4F52944F66E002A0C5E /* FeedVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A57A4F32944F08E002A0C5E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AB2092D28858C59005427DD /* Main.storyboard */,
+				1AB2093228858C5A005427DD /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A57A4F42944F097002A0C5E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1AB2092928858C59005427DD /* SceneDelegate.swift */,
+				1AB2092728858C59005427DD /* AppDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		1AB2091B28858C59005427DD = {
@@ -218,24 +253,16 @@
 		1AB2092628858C59005427DD /* NetmeraPrivateApp */ = {
 			isa = PBXGroup;
 			children = (
+				1A57A4F42944F097002A0C5E /* Delegates */,
+				1A57A4F32944F08E002A0C5E /* Views */,
+				1A57A4F22944F085002A0C5E /* Controllers */,
 				1A0A1AFD29138FF800B9A12E /* Model */,
 				1AE4C9C428893F1E001A561E /* NetmeraPrivateApp.entitlements */,
-				1AB2092728858C59005427DD /* AppDelegate.swift */,
-				1AB2092928858C59005427DD /* SceneDelegate.swift */,
-				1AB2092B28858C59005427DD /* ViewController.swift */,
-				1AB2092D28858C59005427DD /* Main.storyboard */,
-				1AA837D1288F37B700B12BA6 /* UploadVC.swift */,
-				1AA837D7288F383500B12BA6 /* FeedTableViewCell.swift */,
-				1AA837D5288F37E300B12BA6 /* SignUpVC.swift */,
-				1AA837CF288F378000B12BA6 /* FeedVC.swift */,
-				1AA837D3288F37C900B12BA6 /* SignInVC.swift */,
 				1AB2093028858C5A005427DD /* Assets.xcassets */,
-				1AB2093228858C5A005427DD /* LaunchScreen.storyboard */,
 				1AB2093528858C5A005427DD /* Info.plist */,
 				1AE4C9C22886C205001A561E /* GoogleService-Info.plist */,
 				1AA837CB288F317700B12BA6 /* DataService.swift */,
 				1AA837CD288F372000B12BA6 /* Common.swift */,
-				1A0144D829194549001E4497 /* ProfileVC.swift */,
 				1AFD9EF6291CF6EE00185C6C /* ImagePicker.swift */,
 				1AFD9EF82922248C00185C6C /* MyNetmeraUser.swift */,
 				1AFD9EFA2926700E00185C6C /* InboxVC.swift */,
@@ -554,13 +581,14 @@
 				1AFD9EFB2926700E00185C6C /* InboxVC.swift in Sources */,
 				1AFD9EF7291CF6EE00185C6C /* ImagePicker.swift in Sources */,
 				1A0144D929194549001E4497 /* ProfileVC.swift in Sources */,
-				1AA837D0288F378000B12BA6 /* FeedVC.swift in Sources */,
 				1AA837D6288F37E300B12BA6 /* SignUpVC.swift in Sources */,
+				1A57A4F62944F66E002A0C5E /* FeedVC.swift in Sources */,
 				1AB2092C28858C59005427DD /* ViewController.swift in Sources */,
 				1AA837D4288F37C900B12BA6 /* SignInVC.swift in Sources */,
 				1AB2092828858C59005427DD /* AppDelegate.swift in Sources */,
 				1A0A1AFF2913901200B9A12E /* ScoreAttributes.swift in Sources */,
 				1AB2092A28858C59005427DD /* SceneDelegate.swift in Sources */,
+				1AA432A12930A48600815AF7 /* ItemModel.swift in Sources */,
 				1AA837CE288F372000B12BA6 /* Common.swift in Sources */,
 				1AA837CC288F317700B12BA6 /* DataService.swift in Sources */,
 				1AA837D2288F37B700B12BA6 /* UploadVC.swift in Sources */,
@@ -818,9 +846,12 @@
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NetmeraPrivateApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Shared photo";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Shared photo";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "for adid";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -852,9 +883,12 @@
 				DEVELOPMENT_TEAM = 95N24W2PH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NetmeraPrivateApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Shared photo";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Shared photo";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "for adid";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

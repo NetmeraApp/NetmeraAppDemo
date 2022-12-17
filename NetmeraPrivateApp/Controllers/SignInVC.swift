@@ -112,5 +112,12 @@ class SignInVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+   
+    @IBAction func btnDisablePush(_ sender: Any) {
+//        NetmeraDisablePushRequest()
+        Netmera.setEnabledReceivingPushNotifications(false)
+     
+    }
+    
 
 }

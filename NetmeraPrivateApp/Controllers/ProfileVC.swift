@@ -30,7 +30,19 @@ class ProfileVC: UIViewController {
         profileImage.clipsToBounds = true
   
     }
+    
+    @IBAction func btnLogout(_ sender: Any) {
+        do {
+                   try Auth.auth().signOut()
+                   Common.showAlert(title: "OK", message: "Çıkış başarılı", vc: self)
+//                   navBar.topItem?.title = "List"
+                   
+               } catch {
+                   print("error")
+               }
+    }
 }
+
     extension ProfileVC: ImagePickerDelegate {
 
         func didSelect(image: UIImage?) {

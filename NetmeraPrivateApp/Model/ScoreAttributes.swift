@@ -10,7 +10,7 @@ import ActivityKit
 
 struct ScoreAttributes: ActivityAttributes {
     struct ContentState: Codable, Hashable{
-        
+
         var estimatedDeliveryTime: Date
         var teamAScore = "1"
         var teamBScore = "0"

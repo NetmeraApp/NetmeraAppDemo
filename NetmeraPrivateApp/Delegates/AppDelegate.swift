@@ -14,7 +14,8 @@ import FirebaseFirestore
 import FirebaseAuth
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+  
 
 
 
@@ -36,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
                 // This can be called later, see documentation for details
         Netmera.setBaseURL("https://test.sdpaas.com/")
-               Netmera.setAPIKey("gFtyH_nz5WC9m8cZcUfrB2qIGSj205HbPSzBquEEYiO0vO11EhiZfA")
+        Netmera.setAPIKey("gFtyH_nz5WC9m8cZcUfrB2qIGSj205HbPSzBquEEYiO0vO11EhiZfA")
       
     
                 Netmera.setLogLevel(NetmeraLogLevel.debug)
@@ -103,9 +104,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("??????????????????--------------???????????????")
     print(Netmera.recentPushObject()?.customDictionary)        //Custom JSON
     }
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-            completionHandler(.alert)
-            }
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//            completionHandler(.alert)
+//            }
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)
     {}
 
